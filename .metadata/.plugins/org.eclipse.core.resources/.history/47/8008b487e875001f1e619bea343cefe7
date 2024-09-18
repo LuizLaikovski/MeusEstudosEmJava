@@ -7,10 +7,9 @@ public class Caneta {
 	
 //      MÉTODO CONSTRUTOR
 	public Caneta(String m, String c, double p) {
-		this.setModelo(m);
-		this.setCor(c);
-		this.setPonta(p);
-		this.tampa = true;
+		this.setModelo = m;
+		this.setCor = c;
+		this.ponta = p;
 	}
 //  MÉTODOS ESPECIAIS
 	public String getModelo() {
