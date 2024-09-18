@@ -9,7 +9,7 @@ public class Main {
 		c1.setPonta(0.8);
 		
 		Caneta c2 = new Caneta();
-		c2.setModelo("Compacto");
+		c1.setModelo("Compacto");
 		c2.setPonta(0.9);
 		
 		c1.status();

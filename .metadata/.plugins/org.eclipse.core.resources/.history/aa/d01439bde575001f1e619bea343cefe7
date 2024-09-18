@@ -2,15 +2,7 @@ package _get_set_constr;
 public class Caneta {
 	private String modelo;
 	private double ponta;
-	private boolean tampa;
-	private String cor;
 	
-//      MÉTODO CONSTRUTOR
-	public void Caneta() {
-		this.tampar();
-		this.cor = "Rosa";
-	}
-//  MÉTODOS ESPECIAIS
 	public String getModelo() {
 		return this.modelo;
 	}
@@ -33,23 +25,6 @@ public class Caneta {
 		System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 		System.out.println("Modelo: "+ getModelo());
 		System.out.println("Ponta: "+ getPonta());
-		System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-	}
-	
-//      MÉTODOS PERONALISADOS
-	public void tampar() {
-		this.tampa = true;
-	}
-	public boolean getTampa() {
-		return tampa;
-	}
-	public void setTampa(boolean tampa) {
-		this.tampa = tampa;
-	}
-	public String getCor() {
-		return cor;
-	}
-	public void setCor(String cor) {
-		this.cor = cor;
+		
 	}
 }
