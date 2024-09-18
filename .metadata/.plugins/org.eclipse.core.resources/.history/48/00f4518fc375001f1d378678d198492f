@@ -1,0 +1,26 @@
+package Tarefas;
+public class Cachorro {
+	// atributos
+	String nome;
+	String raca;
+	int idade;
+	
+
+	void getnome() {
+		System.out.println("O nome do cachorro é: "+ nome);
+	}
+	
+	void getRaca() {
+		System.out.println("A raça do cachorro é: "+ raca);
+	}
+	
+	double IdadeEmAnosHumanos() {
+		double AnosHumanos = idade * 7;
+		System.out.println("O cahorro tem % e tem % anos humanos de vida.", idade, AnosHumanos);
+		return AnosHumanos;
+	}
+	
+	void Latir() {
+		System.out.println("Au Au Au");
+	}
+}
