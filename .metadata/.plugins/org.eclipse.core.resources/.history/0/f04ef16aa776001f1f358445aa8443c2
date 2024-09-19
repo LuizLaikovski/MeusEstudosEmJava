@@ -5,10 +5,9 @@ public class ContaBanco {
 	protected String tipo;
 	private String proprietario;
 	private double saldo;
-	private boolean status;
+	private String status;
 	
-
-	public ContaBanco(String nc, String t, String p, double sl, boolean s) {
+	public void Conta(String nc, String t, String p, double sl, String s) {
 		this.setNumconta(nc);
 		this.setTipo(t);
 		this.setProprietario(p);
@@ -44,22 +43,11 @@ public class ContaBanco {
 		this.saldo = saldo;
 	}
 	
-	public boolean getStatus() {
+	public String getStatus() {
 		return status;
 	}
-	public void setStatus(boolean status) {
+	public void setStatus(String status) {
 		this.status = status;
-	}
-	
-	public void status() {
-		System.out.println("---------------------------------");
-		System.out.println("         Banco do Brasil         ");
-		System.out.println("---------------------------------");
-		System.out.println("Número da conta: "+ getNumconta());
-		System.out.println("Tipo da Conta: "+ getTipo());
-		System.out.println("Proprietário: "+ getProprietario());
-		System.out.println("Saldo Atual: "+ getSaldo());
-		System.out.println("Status da Conta: "+ getStatus());
 	}
 	
 }
