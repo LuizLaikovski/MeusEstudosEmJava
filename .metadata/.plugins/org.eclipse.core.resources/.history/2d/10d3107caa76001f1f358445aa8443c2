@@ -1,14 +1,14 @@
 package Banco;
 
 public class ContaBanco {
-	public double numconta;
+	public String numconta;
 	protected String tipo;
 	private String proprietario;
 	private double saldo;
 	private boolean status;
 	
 
-	public ContaBanco(double nc, String t, String p, double sl, boolean s) {
+	public ContaBanco(String nc, String t, String p, double sl, boolean s) {
 		this.setNumconta(nc);
 		this.setTipo(t);
 		this.setProprietario(p);
@@ -16,14 +16,12 @@ public class ContaBanco {
 		this.setStatus(s);
 	}
 	
-	
-	public double getNumconta() {
+	public String getNumconta() {
 		return numconta;
 	}
-	public void setNumconta(double numconta) {
+	public void setNumconta(String numconta) {
 		this.numconta = numconta;
 	}
-	
 	
 	public String getTipo() {
 		return tipo;
@@ -32,7 +30,6 @@ public class ContaBanco {
 		this.tipo = tipo;
 	}
 	
-	
 	public String getProprietario() {
 		return proprietario;
 	}
@@ -40,14 +37,12 @@ public class ContaBanco {
 		this.proprietario = proprietario;
 	}
 	
-	
 	public double getSaldo() {
 		return saldo;
 	}
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
 	
 	public boolean getStatus() {
 		return status;
@@ -67,36 +62,4 @@ public class ContaBanco {
 		System.out.println("Status da Conta: "+ getStatus());
 	}
 	
-	
-	public void abrirConta() {
-		System.out.println();
-		System.out.println("---------------------------------");
-		System.out.println("Você abriu sua conta!");
-		System.out.println("---------------------------------");
-	}
-	
-	public void fecharConta() {
-		System.out.println();
-		System.out.println("---------------------------------");
-		System.out.println("Você fechou sua conta!");
-		System.out.println("---------------------------------");
-	}
-	
-	public void Depositar(double v) {
-		if (v > 0) {
-			this.saldo += v;
-		} else {
-			System.out.println("Você digitou alguma coisa errada!!!");
-		}
-	}
-	
-	public void Sacar(double s) {
-		if (s > 0) {
-			this.saldo -= s;
-		} else if (s <= 0) {
-			System.out.println("Você digitou algum valor negativo ou o número 0");
-		} else {
-			System.out.println("Você sacou :"+ s);
-		}
-	}
 }

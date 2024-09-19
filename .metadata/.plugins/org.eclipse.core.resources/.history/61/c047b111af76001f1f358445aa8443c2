@@ -15,7 +15,7 @@ public class Main {
 		
 		
 		System.out.println("Digite o nome do proprietário da conta: ");
-		numc = sc.nextDouble();
+		numc = sc.nextInt();
 		sc.nextLine();
 		System.out.println("Digite o tipo de conta que você deseja criar: ");
 		tipoC = sc.nextLine();

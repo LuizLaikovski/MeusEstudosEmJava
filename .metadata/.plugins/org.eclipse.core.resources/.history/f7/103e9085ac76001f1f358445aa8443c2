@@ -1,14 +1,14 @@
 package Banco;
 
 public class ContaBanco {
-	public double numconta;
+	public String numconta;
 	protected String tipo;
 	private String proprietario;
 	private double saldo;
 	private boolean status;
 	
 
-	public ContaBanco(double nc, String t, String p, double sl, boolean s) {
+	public ContaBanco(String nc, String t, String p, double sl, boolean s) {
 		this.setNumconta(nc);
 		this.setTipo(t);
 		this.setProprietario(p);
@@ -17,10 +17,10 @@ public class ContaBanco {
 	}
 	
 	
-	public double getNumconta() {
+	public String getNumconta() {
 		return numconta;
 	}
-	public void setNumconta(double numconta) {
+	public void setNumconta(String numconta) {
 		this.numconta = numconta;
 	}
 	

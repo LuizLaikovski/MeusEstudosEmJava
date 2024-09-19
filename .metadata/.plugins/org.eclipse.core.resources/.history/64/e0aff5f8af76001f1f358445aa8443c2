@@ -4,6 +4,10 @@ public class Produto {
 	double preco;
 	int quantidade;
 	
+	public double ValorTotalEstoque() {
+		
+	}
+	
 	public void AddProdutos() {
 		
 	}
