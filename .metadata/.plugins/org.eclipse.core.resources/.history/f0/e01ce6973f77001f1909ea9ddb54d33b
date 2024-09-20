@@ -34,8 +34,6 @@ public class Main {
 		
 		cliente.status();
 		
-		cliente.menu();
-		
 		sc.close();
 	}
 

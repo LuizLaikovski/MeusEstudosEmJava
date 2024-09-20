@@ -1,9 +1,9 @@
-package Banco;
+package teste;
 
 import java.util.Scanner;
 
 public class Main {
-	
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -14,14 +14,14 @@ public class Main {
 		String popo = null;
 		
 		
-		System.out.print("Digite o número da conta: ");
+		System.out.println("Digite o nome do proprietário da conta: ");
 		numc = sc.nextDouble();
 		sc.nextLine();
-		System.out.print("Digite o tipo de conta que você deseja criar: ");
+		System.out.println("Digite o tipo de conta que você deseja criar: ");
 		tipoC = sc.nextLine();
-		System.out.print("Digite o nome(completo) do proprietáio: ");
+		System.out.println("Digite o nome(completo) do proprietáio: ");
 		nome = sc.nextLine();
-		System.out.print("Digite se a conta estará ativa ou não(sim/nao): ");
+		System.out.println("Digite se a conta estará ativa ou não(sim/nao): ");
 		popo = sc.nextLine();
 		
 		if (popo.equalsIgnoreCase("sim")) {
@@ -34,9 +34,8 @@ public class Main {
 		
 		cliente.status();
 		
-		cliente.menu();
-		
 		sc.close();
+
 	}
 
 }

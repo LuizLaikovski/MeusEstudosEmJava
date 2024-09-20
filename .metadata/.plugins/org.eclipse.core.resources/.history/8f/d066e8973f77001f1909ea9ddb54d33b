@@ -67,13 +67,6 @@ public class ContaBanco {
 		System.out.println("Status da Conta: "+ getStatus());
 	}
 	
-	public void menu() {
-		System.out.println("---------------------------------");
-		System.out.println("         Banco do Brasil         ");
-		System.out.println("---------------------------------");
-		System.out.println();
-	}
-	
 	
 	public void abrirConta() {
 		System.out.println();
@@ -105,9 +98,5 @@ public class ContaBanco {
 		} else {
 			System.out.println("Você sacou :"+ s);
 		}
-	}
-	
-	public void () {
-		
 	}
 }
