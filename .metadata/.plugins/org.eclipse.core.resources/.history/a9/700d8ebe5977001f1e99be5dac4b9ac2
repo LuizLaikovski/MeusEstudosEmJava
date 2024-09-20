@@ -45,27 +45,27 @@ public class Main {
 					double vd;
 					System.out.println("Digite o valor a ser depositado em sua conta: "); vd = sc.nextDouble();
 					cliente.Depositar(vd);
-					
+					break;
 				case 2:
 					double vs;
 					System.out.println("Saldo : "+ cliente.getSaldo());
 					System.out.print("Digite o valor a ser sacado: "); vs = sc.nextDouble() ;
 					cliente.Sacar(vs);
-					
+					break;
 				case 3:
-					
+					break;
 				case 4:
-					
+					break;
 				default:
 					System.out.println("Opção inválida");
 					System.out.println("Sistema sera fechado, obrigado por usar nossos serviços.");
 					System.out.println("Fechando...");
-			}
+					break;
+			};
 			
-			System.out.print("Deseja continuar [S/N]: ");
-			r = sc.nextLine();
+			System.out.print("Deseja continuar [S/N]: "); r = sc.nextLine();
 			
-		} while (r.equalsIgnoreCase("S") || r.equalsIgnoreCase("sim"));
+		} while (r.equalsIgnoreCase("S") || r.equalsIgnoreCase("Sim") || r.equalsIgnoreCase("sim"));
 		
 		
 		

@@ -71,6 +71,8 @@ public class ContaBanco {
 		System.out.println("---------------------------------");
 		System.out.println("         Banco do Brasil         ");
 		System.out.println("---------------------------------");
+		System.out.println();
+		System.out.println("---------------------------------");
 		System.out.println("1 - Depositar                    ");
 		System.out.println("2 - Sacar                    ");
 		System.out.println("3 - Pagar Anuidade");
@@ -109,5 +111,9 @@ public class ContaBanco {
 		} else {
 			System.out.println("Você sacou :"+ s);
 		}
+	}
+	
+	public void depositar(double d) {
+		
 	}
 }

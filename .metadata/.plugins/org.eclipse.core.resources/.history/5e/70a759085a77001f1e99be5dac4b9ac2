@@ -60,12 +60,12 @@ public class Main {
 					System.out.println("Opção inválida");
 					System.out.println("Sistema sera fechado, obrigado por usar nossos serviços.");
 					System.out.println("Fechando...");
-			}
+			};
 			
 			System.out.print("Deseja continuar [S/N]: ");
 			r = sc.nextLine();
 			
-		} while (r.equalsIgnoreCase("S") || r.equalsIgnoreCase("sim"));
+		} while (r.equalsIgnoreCase("S") || r.equalsIgnoreCase("Sim") || r.equalsIgnoreCase("sim"));
 		
 		
 		

@@ -45,7 +45,7 @@ public class Main {
 					double vd;
 					System.out.println("Digite o valor a ser depositado em sua conta: "); vd = sc.nextDouble();
 					cliente.Depositar(vd);
-					
+					break;
 				case 2:
 					double vs;
 					System.out.println("Saldo : "+ cliente.getSaldo());
@@ -65,7 +65,7 @@ public class Main {
 			System.out.print("Deseja continuar [S/N]: ");
 			r = sc.nextLine();
 			
-		} while (r.equalsIgnoreCase("S") || r.equalsIgnoreCase("sim"));
+		} while (r.equalsIgnoreCase("S") || r.equalsIgnoreCase("Sim") || r.equalsIgnoreCase("sim"));
 		
 		
 		
