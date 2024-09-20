@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int numc;
+		double numc;
 		String tipoC = null;
 		String nome = null;
 		boolean statusc = false;
@@ -15,7 +15,7 @@ public class Main {
 		String r;
 		
 		System.out.print("Digite o número da conta: ");
-		numc = sc.nextInt();
+		numc = sc.nextDouble();
 		sc.nextLine();
 		System.out.print("Digite o tipo de conta que você deseja criar: ");
 		tipoC = sc.nextLine();
@@ -52,14 +52,10 @@ public class Main {
 					cliente.Sacar(vs);
 					break;
 				case 3:
-					cliente.pagarAnuidade();
-					
+					System.out.println("popo1");
 					break;
 				case 4:
-					break;
-				case 5:
-					System.out.println("Sistema sera fechado, obrigado por usar nossos serviços.");
-					System.out.println("Fechando...");
+					System.out.println("popo2");
 					break;
 				default:
 					System.out.println("Opção inválida");

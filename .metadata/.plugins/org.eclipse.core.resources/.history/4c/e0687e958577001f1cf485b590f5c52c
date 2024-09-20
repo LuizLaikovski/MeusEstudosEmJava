@@ -110,9 +110,4 @@ public class ContaBanco {
 			System.out.println("Você sacou :"+ s);
 		}
 	}
-	
-	public void pagarAnuidade(double a, String r) {
-		a = (this.saldo / 100) * 2;
-		System.out.println("Sua Anuidade é 2% do saldo atual de sua conta. E ficou em "+ a);
-	}
 }

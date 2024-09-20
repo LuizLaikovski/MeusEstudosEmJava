@@ -52,14 +52,10 @@ public class Main {
 					cliente.Sacar(vs);
 					break;
 				case 3:
-					cliente.pagarAnuidade();
-					
+					System.out.println("popo1");
 					break;
 				case 4:
-					break;
-				case 5:
-					System.out.println("Sistema sera fechado, obrigado por usar nossos serviços.");
-					System.out.println("Fechando...");
+					System.out.println("popo2");
 					break;
 				default:
 					System.out.println("Opção inválida");

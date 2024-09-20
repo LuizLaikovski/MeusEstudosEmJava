@@ -8,7 +8,7 @@ public class ContaBanco {
 	private boolean status;
 	
 
-	public ContaBanco(int nc, String t, String p, double sl, boolean s) {
+	public ContaBanco(double nc, String t, String p, double sl, boolean s) {
 		this.setNumconta(nc);
 		this.setTipo(t);
 		this.setProprietario(p);
@@ -17,10 +17,10 @@ public class ContaBanco {
 	}
 	
 	
-	public int getNumconta() {
-		return (int) numconta;
+	public double getNumconta() {
+		return numconta;
 	}
-	public void setNumconta(int numconta) {
+	public void setNumconta(double numconta) {
 		this.numconta = numconta;
 	}
 	
@@ -109,10 +109,5 @@ public class ContaBanco {
 		} else {
 			System.out.println("Você sacou :"+ s);
 		}
-	}
-	
-	public void pagarAnuidade(double a, String r) {
-		a = (this.saldo / 100) * 2;
-		System.out.println("Sua Anuidade é 2% do saldo atual de sua conta. E ficou em "+ a);
 	}
 }

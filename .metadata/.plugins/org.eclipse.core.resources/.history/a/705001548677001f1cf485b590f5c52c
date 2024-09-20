@@ -52,8 +52,7 @@ public class Main {
 					cliente.Sacar(vs);
 					break;
 				case 3:
-					cliente.pagarAnuidade();
-					
+					System.out.println("");
 					break;
 				case 4:
 					break;
