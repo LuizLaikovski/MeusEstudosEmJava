@@ -1,0 +1,10 @@
+package Prova;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Carro c1 = new Carro("Fusca", "Volkswagen", 1993, "Rosa Choque", 30000, false, 2, 5, "FU5C4OR0S4", "Diesel");
+
+	}
+
+}

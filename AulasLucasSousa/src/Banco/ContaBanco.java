@@ -111,8 +111,19 @@ public class ContaBanco {
 		}
 	}
 	
-	public void pagarAnuidade(double a, String r) {
-		a = (this.saldo / 100) * 2;
+	public double pagarAnuidade(double a, double sld) {
+		a = (sld / 100) * 2;
 		System.out.println("Sua Anuidade é 2% do saldo atual de sua conta. E ficou em "+ a);
+		return a;
+	}
+	
+	public double taxa(double a, double sld) {
+		a = (sld / 100) * 2;
+		return a;
+	}
+	
+	public double retirarValor(double r, double sldo, double result) {
+		 result = sldo - r;
+		 return result; 
 	}
 }

@@ -13,6 +13,9 @@ public class Main {
 		boolean statusc = false;
 		String popo = null;
 		String r;
+		double pop = 0;
+		String rr = null;
+		double rrr = 0;
 		
 		System.out.print("Digite o número da conta: ");
 		numc = sc.nextInt();
@@ -52,8 +55,15 @@ public class Main {
 					cliente.Sacar(vs);
 					break;
 				case 3:
-					cliente.pagarAnuidade();
-					
+					cliente.pagarAnuidade(pop, cliente.getSaldo());
+					System.out.println("Deseja pagar[S/N]: "); 
+					sc.nextLine();
+					rr = sc.nextLine();
+					if (rr.equalsIgnoreCase("s")) {
+						System.out.println(cliente.retirarValor(cliente.taxa(pop , cliente.getSaldo()), cliente.getSaldo(), rrr));
+					} else {
+						System.out.println("Sua Transação não foi concluida.");
+					}
 					break;
 				case 4:
 					break;
