@@ -12,11 +12,20 @@
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="retangulo.Retangulo"/>
     <fullyQualifiedTypeName name="java.awt.geom.Area"/>
+    <fullyQualifiedTypeName name="java.lang.NoSuchMethodError"/>
+    <fullyQualifiedTypeName name="Funcionários.Empregado"/>
+    <fullyQualifiedTypeName name="Prova.Carro"/>
+    <fullyQualifiedTypeName name="javax.swing.table.TableStringConverter"/>
+    <fullyQualifiedTypeName name="Slakkk.Professor"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="ClasseEstatica.Caulculadora"/>
+    <fullyQualifiedTypeName name="Conversao.CurrencyConverter"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.NoSuchMethodError"/>
-    <fullyQualifiedTypeName name="Funcionários.Empregado"/>
+    <fullyQualifiedTypeName name="MetodoConstrutor.Conta"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="Prova.Carro"/>
 </qualifiedTypeNameHistroy>
