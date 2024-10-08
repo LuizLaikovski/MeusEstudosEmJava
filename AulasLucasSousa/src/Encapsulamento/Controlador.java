@@ -10,4 +10,6 @@ public interface Controlador {
 	public abstract void desligarMudo();
 	public abstract void play();
 	public abstract void pause();
+	
+	
 }

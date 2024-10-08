@@ -22,10 +22,15 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="ClasseEstatica.Caulculadora"/>
     <fullyQualifiedTypeName name="Conversao.CurrencyConverter"/>
+    <fullyQualifiedTypeName name="MetodoConstrutor.Conta"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+    <fullyQualifiedTypeName name="Encapsulamento.Controlador"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="Banco.Conta"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="MetodoConstrutor.Conta"/>
-    <fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="PrimeiroArray.Produtos"/>
 </qualifiedTypeNameHistroy>
