@@ -37,53 +37,75 @@ public class ControleRemoto implements Controlador{
 	// MÉTODOS PERSONALIZADOS
 	@Override
 	public void ligar() {
-		// TODO Auto-generated method stub
+		setLigado(true);
 		
 	}
 	@Override
 	public void desligar() {
-		// TODO Auto-generated method stub
-		
+		setLigado(false);
 	}
 	@Override
 	public void abrirMenu() {
-		// TODO Auto-generated method stub
+		System.out.println("A TV está : "+ this.ligado);
+		System.out.println("A TV está reproduzindo ou está pausada: "+ this.tocando);
+		System.out.println("O volume está "+ this.voleume +"%");
 		
 	}
 	@Override
 	public void fecharMenu() {
-		// TODO Auto-generated method stub
+		System.out.println("Fechar Menu");
 		
 	}
 	@Override
 	public void maisVolume() {
-		// TODO Auto-generated method stub
-		
+		if (this.ligado == true) {
+			this.voleume += 10;
+		} else {
+			System.out.println("A TV ESTÁ DESLIGADA");
+		}
 	}
 	@Override
 	public void menosVolume() {
-		// TODO Auto-generated method stub
-		
+		if (this.ligado == true) {
+			this.voleume -= 10;
+		} else {
+			System.out.println("A TV ESTÁ DESLIGADA");
+		}
 	}
 	@Override
 	public void ligarMudo() {
-		// TODO Auto-generated method stub
-		
+		if ((this.ligado == true) && (this.voleume < 0)) {
+			this.voleume = 0;
+		} else {
+			System.out.println("A TV JÁ ESTÁ NO MUDO");
+		}
 	}
 	@Override
 	public void desligarMudo() {
-		// TODO Auto-generated method stub
+		if ((this.ligado == true) && (this.voleume == 0)) {
+			System.out.println("O MUDO ESTÁ DESLIGADO AGR");
+		} else {
+			System.out.println("O MUDO JA ESTÁ DESLIGADO");
+		}
 		
 	}
 	@Override
 	public void play() {
-		// TODO Auto-generated method stub
-		
+		if ((this.ligado == true) && (this.tocando == false)) {
+			this.tocando = true;
+			System.out.println("A TV VAI COMEÇAR A REPRODUZIR");
+		} else {
+			System.out.println("A TV JÁ ESTÁ REPRODUZINDO");
+		}
 	}
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
-		
+		if ((this.ligado == true) && (this.tocando == true)) {
+			this.tocando = false;
+			System.out.println("A TV ESTÁ PAUSADA");
+		} else {
+			System.out.println("O PROGRAMA ESTÁ PAUSADA");
+		}
 	}
 
 }
